@@ -19,7 +19,7 @@ Download .zip from downloads page for specific &hellip;">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://cstewart87.github.io/blog/2015/10/21/provisioners-otto-and-chef-provisioning/">
+  <link rel="canonical" href="http://cstewart87.github.io/blog/2015/10/20/provisioners-otto-and-chef-provisioning/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Curtis's Blog" type="application/atom+xml">
@@ -39,7 +39,7 @@ Download .zip from downloads page for specific &hellip;">
   <header role="banner"><hgroup>
   <h1><a href="/">Curtis's Blog</a></h1>
   
-    <h2>Automation and DevOps</h2>
+    <h2>Automation and DevOps.  Opinions are mine, not my employer's (VMware).</h2>
   
 </hgroup>
 
@@ -78,7 +78,7 @@ Download .zip from downloads page for specific &hellip;">
 
 
 
-<time class='entry-date' datetime='2015-10-21T03:30:16+00:00'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>21</span><span class='date-suffix'>st</span>, <span class='date-year'>2015</span></span> <span class='time'>3:30 am</span></time>
+<time class='entry-date' datetime='2015-10-20T22:30:16-05:00'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>20</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>10:30 pm</span></time>
         
       </p>
     
@@ -593,7 +593,7 @@ Download .zip from downloads page for specific &hellip;">
 
 <p>This configuration would not connect to the AWS instances created.  Since it&rsquo;s been awhile since I&rsquo;ve configured VPC&rsquo;s with valid security group/firewall settings, I decided to go back to otto to generate my infrastructure (via <code>otto infra</code>), and use that as a reference architecture :)</p>
 
-<p>I ultimately got lazy and gave up on the specific VPC settings to ensure SSH access.  Instead, I just updated the machine options to use a non-VPC instance type.  Here&rsquo;s the resulting aws recipe:</p>
+<p>I ultimately got lazy and gave up on the specific VPC settings to ensure SSH access.  Instead, I just updated the machine options to use a non-VPC instance type.</p>
 
 <p>NOTE: In order to cleanup all of the created AWS resources, I had to update the cleanup recipe to ensure resources were deleted in the correct order (instance -> subnet -> security group -> vpc).  Errors such as the one below became a nightmare during the creation of the cleanup recipe.</p>
 
@@ -635,7 +635,7 @@ Download .zip from downloads page for specific &hellip;">
 
 
 
-<time class='entry-date' datetime='2015-10-21T03:30:16+00:00'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>21</span><span class='date-suffix'>st</span>, <span class='date-year'>2015</span></span> <span class='time'>3:30 am</span></time>
+<time class='entry-date' datetime='2015-10-20T22:30:16-05:00'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>20</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>10:30 pm</span></time>
       
 
 
@@ -643,7 +643,7 @@ Download .zip from downloads page for specific &hellip;">
     
       <div class="sharing">
   
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://cstewart87.github.io/blog/2015/10/21/provisioners-otto-and-chef-provisioning/" data-via="cstew06" data-counturl="http://cstewart87.github.io/blog/2015/10/21/provisioners-otto-and-chef-provisioning/" >Tweet</a>
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://cstewart87.github.io/blog/2015/10/20/provisioners-otto-and-chef-provisioning/" data-via="cstew06" data-counturl="http://cstewart87.github.io/blog/2015/10/20/provisioners-otto-and-chef-provisioning/" >Tweet</a>
   
   
   
@@ -652,6 +652,8 @@ Download .zip from downloads page for specific &hellip;">
     
     <p class="meta">
       
+      
+        <a class="basic-alignment right" href="/blog/2015/11/09/does-the-devops-team-manage-this/" title="Next Post: Does the DevOps team manage this?">Does the DevOps team manage this? &raquo;</a>
       
     </p>
   </footer>
@@ -666,7 +668,11 @@ Download .zip from downloads page for specific &hellip;">
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/blog/2015/10/21/provisioners-otto-and-chef-provisioning/">Provisioners: Otto and Chef Provisioning</a>
+        <a href="/blog/2015/11/09/does-the-devops-team-manage-this/">Does the DevOps Team Manage This?</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/10/20/provisioners-otto-and-chef-provisioning/">Provisioners: Otto and Chef Provisioning</a>
       </li>
     
   </ul>

@@ -4,7 +4,7 @@
   <title><![CDATA[Curtis's Blog]]></title>
   <link href="http://cstewart87.github.io/atom.xml" rel="self"/>
   <link href="http://cstewart87.github.io/"/>
-  <updated>2015-10-21T03:35:47+00:00</updated>
+  <updated>2015-11-09T20:12:30-06:00</updated>
   <id>http://cstewart87.github.io/</id>
   <author>
     <name><![CDATA[Curtis Stewart]]></name>
@@ -14,10 +14,25 @@
 
   
   <entry>
+    <title type="html"><![CDATA[Does the DevOps Team Manage This?]]></title>
+    <link href="http://cstewart87.github.io/blog/2015/11/09/does-the-devops-team-manage-this/"/>
+    <updated>2015-11-09T19:37:09-06:00</updated>
+    <id>http://cstewart87.github.io/blog/2015/11/09/does-the-devops-team-manage-this</id>
+    <content type="html"><![CDATA[<p>This is a question that was asked at a recent Meetup I attended, but it was not the first time I had heard a question like this.  I&rsquo;ve actually had some recent discussions with peers around this very topic: &ldquo;is there such a thing as a DevOps team or special DevOps positions?&rdquo;</p>
+
+<p>DevOps isn&rsquo;t necessarily about creating a new team to write your Chef cookbooks, Puppet modules, Ansible playbooks, Jenkins workflows, Docker images, etc.  While it may be necessary to pull together some willing volunteers to help jumpstart your efforts, this should be a temporory solution.</p>
+
+<p>Longterm success with DevOps methodologies is about blurring the line between devs and ops (as well as many other areas of the business too - let&rsquo;s not forget about security, networking, etc.).  What do I mean by &ldquo;blurring the line between devs and ops&rdquo;?  Ops teams need to start using common development practices.  They need to use a version control system (i.e. Git, SVN, etc.); they need to test their configurations and scripts using a continuous integration pipeline.  Also, dev teams should be more familar with common operations practices.  A development team should know how their application is deployed; they should be familiar with how OS/platform configurations effect their applications performance.</p>
+
+<p>Just like applications that you or your company may create and develop though, many of these tools that you&rsquo;re using should have product owners.  You need someone to take ownership of these products to ensure they&rsquo;re available, up-to-date, and providing the needs of users.  These products and tools will become more and more important to keep you&rsquo;re business up and running and successful so you want to make sure they&rsquo;re always available.</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Provisioners: Otto and Chef Provisioning]]></title>
-    <link href="http://cstewart87.github.io/blog/2015/10/21/provisioners-otto-and-chef-provisioning/"/>
-    <updated>2015-10-21T03:30:16+00:00</updated>
-    <id>http://cstewart87.github.io/blog/2015/10/21/provisioners-otto-and-chef-provisioning</id>
+    <link href="http://cstewart87.github.io/blog/2015/10/20/provisioners-otto-and-chef-provisioning/"/>
+    <updated>2015-10-20T22:30:16-05:00</updated>
+    <id>http://cstewart87.github.io/blog/2015/10/20/provisioners-otto-and-chef-provisioning</id>
     <content type="html"><![CDATA[<h1>Application Provisioning Tools</h1>
 
 <p>All performed on OSX.</p>
@@ -526,7 +541,7 @@
 
 <p>This configuration would not connect to the AWS instances created.  Since it&rsquo;s been awhile since I&rsquo;ve configured VPC&rsquo;s with valid security group/firewall settings, I decided to go back to otto to generate my infrastructure (via <code>otto infra</code>), and use that as a reference architecture :)</p>
 
-<p>I ultimately got lazy and gave up on the specific VPC settings to ensure SSH access.  Instead, I just updated the machine options to use a non-VPC instance type.  Here&rsquo;s the resulting aws recipe:</p>
+<p>I ultimately got lazy and gave up on the specific VPC settings to ensure SSH access.  Instead, I just updated the machine options to use a non-VPC instance type.</p>
 
 <p>NOTE: In order to cleanup all of the created AWS resources, I had to update the cleanup recipe to ensure resources were deleted in the correct order (instance -> subnet -> security group -> vpc).  Errors such as the one below became a nightmare during the creation of the cleanup recipe.</p>
 
